@@ -38,10 +38,12 @@ function changePage(page) {
                 const card = document.createElement('div');
                 card.className = 'card';
                 card.innerHTML = `
+                    <div style="border: 1px solid #ccc; padding: 20px;">    
                     <h3>ВЗН №${String(i).padStart(3, '0')}</h3>
                     <p><strong>Отправитель:</strong> Отправитель ${i}</p>
                     <p><strong>Получатель:</strong> Получатель ${i}</p>
                     <p><strong>Дата выдачи:</strong> ${getRandomDate()}</p>
+                    </div>
                 `;
                 recordList.appendChild(card);
             }
