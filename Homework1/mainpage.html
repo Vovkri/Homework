@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>  
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Моя страница</title>
+    <link rel="stylesheet" href="style.css">    
+</head>
+<script src="scripts.js"></script>
+<body>
+
+    <div class="header">
+        <h1 id="page-title">Меню</h1>
+    </div>
+
+    <div class="content" id="content">
+        <a href="#" onclick="changePage('tasks')"><img src="work.png" alt="Задачи" class="image">Задачи</a>
+        <a href="#" onclick="changePage('settings')"><img src="settings.png" alt="Настройки" class="image">Настройки</a>
+        <a href="#" onclick="changePage('about')"><img src="about.png" alt="О системе" class="image">О системе</a>
+    </div>
+
+    <div class="footer">
+        <a href="#" class="menu-item" onclick="changePage('main')">
+            <span class="icon" style="background-image: url('menu.png');"></span>
+            <span class="label">Меню</span>
+        </a>
+        <a href="#scanner" class="menu-item" >
+            <span class="icon" style="background-image: url('scanner.png');"></span>
+            <span class="label">Сканер</span>
+        </a>
+        <a href="#back" class="menu-item" onclick="goBack()">
+            <span class="icon" style="background-image: url('back.png');"></span>
+            <span class="label">Назад</span>
+        </a>
+    </div>
+    
+</body>
+</html>
